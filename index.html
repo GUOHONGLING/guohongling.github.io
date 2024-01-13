@@ -4,8 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Oswald:wght@700&family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9cfe930587.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Hello, this is my portfolio.</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Shaowen Geng</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p class="sub-contents">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, laudantium? Fuga dolores suscipit voluptatem vel laborum quasi deleniti officia odit quaerat, beatae facere eveniet obcaecati aut debitis corporis optio atque.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                UI/UX<br>
+                                <span>Designing Web/App interfaces</span>
+                            </li>
+                            <li>
+                                Web Development<br>
+                                <span>Web app Development</span>
+                            </li>
+                            <li>
+                                App Development<br>
+                                <span>Building Android/iOS apps</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                2021-current<br>
+                                <span>Fulongzhi</span>
+                            </li>
+                            <li>
+                                2015-2019<br>
+                                <span>New Orientation</span>
+                            </li>
+                            <li>
+                                2015-2010<br>
+                                <span>Longwen</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                2021-2023<br>
+                                <span>Information Technology From The University of Queensland</span>
+                            </li>
+                            <li>
+                                2006-2010<br>
+                                <span>Chemistry From Harbin Normal University</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit exercitationem rem ab voluptatibus voluptate ducimus beatae ad perspiciatis quisquam blanditiis nulla non pariatur reprehenderit, ex dolore fugit, labore libero?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit exercitationem rem ab voluptatibus voluptate ducimus beatae ad perspiciatis quisquam blanditiis nulla non pariatur reprehenderit, ex dolore fugit, labore libero?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit exercitationem rem ab voluptatibus voluptate ducimus beatae ad perspiciatis quisquam blanditiis nulla non pariatur reprehenderit, ex dolore fugit, labore libero?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
