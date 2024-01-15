@@ -3,146 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <!-- title -->
+    <title>My Website</title>
+    <!-- styles -->
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Oswald:wght@700&family=Poppins&display=swap" rel="stylesheet">
-
+    <!-- icons -->
     <script src="https://kit.fontawesome.com/9cfe930587.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.jpg" alt="logo" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Data Analyst</p>
-                <h1>Hi, I'm <span>Shaowen Geng</span></h1>
-            </div>
-        </div>
-    </div>
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg">
+    <!-- header section -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero"><h1><span>S</span>haowen <span>G</span>eng</h1></a>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-
-                    <p class="sub-contents">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, laudantium? Fuga dolores suscipit voluptatem vel laborum quasi deleniti officia odit quaerat, beatae facere eveniet obcaecati aut debitis corporis optio atque.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>
-                                UI/UX<br>
-                                <span>Designing Web/App interfaces</span>
-                            </li>
-                            <li>
-                                Web Development<br>
-                                <span>Web app Development</span>
-                            </li>
-                            <li>
-                                App Development<br>
-                                <span>Building Android/iOS apps</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li>
-                                2021-current<br>
-                                <span>Fulongzhi</span>
-                            </li>
-                            <li>
-                                2015-2019<br>
-                                <span>New Orientation</span>
-                            </li>
-                            <li>
-                                2015-2010<br>
-                                <span>Longwen</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>
-                                2021-2023<br>
-                                <span>Information Technology From The University of Queensland</span>
-                            </li>
-                            <li>
-                                2006-2010<br>
-                                <span>Chemistry From Harbin Normal University</span>
-                            </li>
-                        </ul>
-                    </div>
-
+                <div class="nav-list">
+                    <div class="hamburger"><div class="bar"></div></div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="#services" data-after="Services">Services</a></li>
+                        <li><a href="#projects" data-after="Projects">Projects</a></li>
+                        <li><a href="#about" data-after="About">About</a></li>
+                        <li><a href="#contact" data-after="Contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- end header section -->
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit exercitationem rem ab voluptatibus voluptate ducimus beatae ad perspiciatis quisquam blanditiis nulla non pariatur reprehenderit, ex dolore fugit, labore libero?</p>
-                    <a href="#">Learn more</a>
+    <!-- hero section -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello, <span></span></h1>
+                <h1>My name is <span></span></h1>
+                <h1>Shaowen <span></span></h1>
+                <a href="#projects" type="button" class="cta">Portfolio</a>
+            </div>
+        </div>
+    </section>
+    <!-- end hero -->
+
+    <!-- service section -->
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">Serv<span>i</span>ces</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error velit fugit, beatae dolore nam expedita fuga, sit at, aperiam dolorem voluptatum minima dolorum. Mollitia iste voluptate nemo architecto, cumque consectetur.</p>
+            </div>
+            <div class="service-bottom">
+                <div class="service-item">
+                    <div class="icon">
+                        <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/positive-dynamic.png" alt="positive-dynamic"/>
+                    </div>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nostrum ipsum quo nobis corporis deleniti est ipsa, illo, suscipit quos ut, amet molestias repudiandae voluptatibus mollitia quaerat officia quam dolor.</p>
                 </div>
-
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit exercitationem rem ab voluptatibus voluptate ducimus beatae ad perspiciatis quisquam blanditiis nulla non pariatur reprehenderit, ex dolore fugit, labore libero?</p>
-                    <a href="#">Learn more</a>
+                <div class="service-item">
+                    <div class="icon">
+                        <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/positive-dynamic.png" alt="positive-dynamic"/>
+                    </div>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nostrum ipsum quo nobis corporis deleniti est ipsa, illo, suscipit quos ut, amet molestias repudiandae voluptatibus mollitia quaerat officia quam dolor.</p>
                 </div>
-
-                <div>
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sit exercitationem rem ab voluptatibus voluptate ducimus beatae ad perspiciatis quisquam blanditiis nulla non pariatur reprehenderit, ex dolore fugit, labore libero?</p>
-                    <a href="#">Learn more</a>
+                <div class="service-item">
+                    <div class="icon">
+                        <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/positive-dynamic.png" alt="positive-dynamic"/>
+                    </div>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nostrum ipsum quo nobis corporis deleniti est ipsa, illo, suscipit quos ut, amet molestias repudiandae voluptatibus mollitia quaerat officia quam dolor.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/3d-fluency/94/positive-dynamic.png" alt="positive-dynamic"/>
+                    </div>
+                    <h2>Data Analysis</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam nostrum ipsum quo nobis corporis deleniti est ipsa, illo, suscipit quos ut, amet molestias repudiandae voluptatibus mollitia quaerat officia quam dolor.</p>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+    </section>
+    <!-- end service section -->
 
-        function opentab(tabname) {
-            for(tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+    <!-- projects section -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="project-top">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="project-bottom">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 1</h1>
+                        <h2>Coding is love.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium, earum ab obcaecati eveniet, unde accusantium pariatur laboriosam labore mollitia voluptates fuga velit animi? Hic natus exercitationem repellendus nisi inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium, earum ab obcaecati eveniet, unde accusantium pariatur laboriosam labore mollitia voluptates fuga velit animi? Hic natus exercitationem repellendus nisi inventore.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/computer.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 2</h1>
+                        <h2>Coding is love.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium, earum ab obcaecati eveniet, unde accusantium pariatur laboriosam labore mollitia voluptates fuga velit animi? Hic natus exercitationem repellendus nisi inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium, earum ab obcaecati eveniet, unde accusantium pariatur laboriosam labore mollitia voluptates fuga velit animi? Hic natus exercitationem repellendus nisi inventore.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/computer.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 3</h1>
+                        <h2>Coding is love.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium, earum ab obcaecati eveniet, unde accusantium pariatur laboriosam labore mollitia voluptates fuga velit animi? Hic natus exercitationem repellendus nisi inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium, earum ab obcaecati eveniet, unde accusantium pariatur laboriosam labore mollitia voluptates fuga velit animi? Hic natus exercitationem repellendus nisi inventore.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/computer.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Project 4</h1>
+                        <h2>Coding is love.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium, earum ab obcaecati eveniet, unde accusantium pariatur laboriosam labore mollitia voluptates fuga velit animi? Hic natus exercitationem repellendus nisi inventore.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio praesentium, earum ab obcaecati eveniet, unde accusantium pariatur laboriosam labore mollitia voluptates fuga velit animi? Hic natus exercitationem repellendus nisi inventore.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/computer.jpg" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end projects section -->
+
+    <!-- about section -->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="images/profile.png" alt="img">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About <span>me</span></h1>
+                <h2>Data Analyst</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti eos pariatur quo dignissimos culpa, corporis minima obcaecati quos, error excepturi, delectus modi vel assumenda distinctio impedit reiciendis magnam numquam quisquam.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti eos pariatur quo dignissimos culpa, corporis minima obcaecati quos, error excepturi, delectus modi vel assumenda distinctio impedit reiciendis magnam numquam quisquam.</p>
+                <a href="#" class="cta">Download Resume</a>
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- contact section -->
+    <section id="contact">
+        <div class="contact container">
+            <div><h1 class="section-title">Contact <span>info</span></h1></div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/3d-fluency/94/phone.png" alt="phone"/>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>+61 478 355 296</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/3d-fluency/94/mail.png" alt="mail"/>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>gengshaowen1987@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/3d-fluency/94/map-marker--v2.png" alt="map-marker--v2"/>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>43Forbes St., West End, QLD</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contact section -->
+
+    <!-- footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand"><h1><span>S</span>haowen <span>G</span>eng</h1></div>
+            <h2>Your Complete Data Analysis</h2>
+            <div class="social-icon">
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+                </div>
+                <div class="social-item">
+                    <a href="#"><img src="https://img.icons8.com/fluency/48/twitter-squared.png" alt="twitter-squared"/></a>
+                </div>
+            </div>
+            <p>Copyright © 2024 Shaowen. All rights reserved</p>
+        </div>
+    </section>
+    <!-- end footer -->
+    <script src="app.js"></script>
 </body>
 </html>
